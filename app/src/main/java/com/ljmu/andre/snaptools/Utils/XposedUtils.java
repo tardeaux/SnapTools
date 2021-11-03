@@ -359,7 +359,7 @@ public class XposedUtils {
                         hitCount
                 );
             }
-            Timber.d("Displayed %s stats");
+            Timber.d("Displayed %s stats", hitCountList.size());
         }
 
         private List<Pair<Member, Integer>> buildHitCountList() {
