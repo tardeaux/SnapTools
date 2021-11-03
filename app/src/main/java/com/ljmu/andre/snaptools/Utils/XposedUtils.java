@@ -69,7 +69,7 @@ public class XposedUtils {
             if (hookSubClasses) {
                 Class[] subClasses = targetClass.getClasses();
 
-                Timber.d("Hooking Subclasses: " + subClasses.length);
+                Timber.d("Hooking Subclasses: %s", subClasses.length);
 
                 for (Class subClass : subClasses)
                     hookAllMethods(subClass.getName(), cl, true, hookSuperClasses);
@@ -80,7 +80,7 @@ public class XposedUtils {
                 if (superClass == null || superClass.getSimpleName().equals("Object"))
                     return;
 
-                Timber.d("Found Superclass: " + superClass.getSimpleName());
+                Timber.d("Found Superclass: %s", superClass.getSimpleName());
                 hookAllMethods(superClass.getName(), cl, false, true);
             }
         } catch (Throwable t) {
@@ -95,13 +95,13 @@ public class XposedUtils {
     public static void triggerOnAll(Class targetClass, XC_MethodHook methodHook) {
         Method[] allMethods = targetClass.getDeclaredMethods();
 
-        Timber.d("Methods to hook: " + allMethods.length);
+        Timber.d("Methods to hook: %s", allMethods.length);
         for (Method baseMethod : allMethods) {
             Class<?>[] paramList = baseMethod.getParameterTypes();
             String fullMethodString = baseMethod.getName() + "(" + Arrays.toString(paramList) + ")";
 
             if (Modifier.isAbstract(baseMethod.getModifiers())) {
-                Timber.w("Abstract method: " + targetClass.getSimpleName() + "." + fullMethodString);
+                Timber.w("Abstract method: %s.%s", targetClass.getSimpleName(), fullMethodString);
                 continue;
             }
 
@@ -381,7 +381,7 @@ public class XposedUtils {
 
             Class[] subClasses = clazz.getClasses();
 
-            Timber.d("Hooking Subclasses: " + subClasses.length);
+            Timber.d("Hooking Subclasses: %s", subClasses.length);
 
             for (Class subClass : subClasses)
                 hook(subClass, instance);
@@ -401,7 +401,7 @@ public class XposedUtils {
 
             Method[] allMethods = clazz.getDeclaredMethods();
 
-            Timber.d("Methods to hook: " + allMethods.length);
+            Timber.d("Methods to hook: %s", allMethods.length);
 
             for (Method baseMethod : allMethods) {
                 if (Modifier.isAbstract(baseMethod.getModifiers()))
