@@ -37,7 +37,7 @@ android {
     }
 
     compileSdkVersion 29
-    buildToolsVersion '31-rc3'
+    buildToolsVersion '31.0.0'
     android {
         lintOptions {
             abortOnError false
@@ -229,5 +229,5 @@ dependencies {
             exclude group: 'android.support.annotation'
         }
     }
-    implementation 'com.github.jaqxues:Akrolyb:master-SNAPSHOT'
+    implementation 'com.github.jaqxues:Akrolyb:1.0.9'
 }
