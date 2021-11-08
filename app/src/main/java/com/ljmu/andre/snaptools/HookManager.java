@@ -25,6 +25,7 @@ import com.ljmu.andre.snaptools.Utils.TimberUtils;
 import com.ljmu.andre.snaptools.Utils.UnhookManager;
 import com.ljmu.andre.snaptools.Utils.XposedUtils.ST_MethodHook;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -143,6 +144,7 @@ public class HookManager implements IXposedHookLoadPackage {
         //noinspection unchecked
         List<PackLoadState>[] packLoadStates = new List[1];
         Throwable[] throwables = new Throwable[1];
+        packLoadStates[0] = new ArrayList<>();
         addUnhook("System",
                 findAndHookMethod(
                         "android.app.Application",

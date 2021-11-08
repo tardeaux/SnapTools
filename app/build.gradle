@@ -113,12 +113,12 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.material:material:1.1.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.multidex:multidex:2.0.1'
-    implementation 'androidx.exifinterface:exifinterface:1.2.0'
-    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.exifinterface:exifinterface:1.3.3'
+    testImplementation 'junit:junit:4.13.2'
     // SU library
     implementation 'com.jaredrummler:android-shell:1.0.0'
     // Xposed
@@ -130,31 +130,31 @@ dependencies {
     implementation 'com.wang.avi:library:2.1.3'
     implementation 'com.isseiaoki:simplecropview:1.1.4'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.27'
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.2.0'
     implementation 'com.fujiyuu75:sequent:0.2.1'
     // View Injection
-    implementation 'com.jakewharton:butterknife:10.2.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
     // File Management
-    implementation 'com.nononsenseapps:filepicker:4.1.0'
+    implementation 'com.nononsenseapps:filepicker:4.2.1'
     //RXJava
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
     // APK Update Checker
     implementation 'com.github.javiersantos:AppUpdater:2.6.3'
     // ### Googles own API's ### \\
     // Network Request
-    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.android.volley:volley:1.2.1'
     // JSON Parsing
-    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.code.gson:gson:2.8.9'
     // Guava
     api 'com.google.guava:guava:27.1-android'
     //Tutorial lib for overview
     implementation 'com.github.faruktoptas:FancyShowCaseView:1.0.0'
     //Confetti lib because this is important andre dammit
-    implementation 'nl.dionsegijn:konfetti:1.0.2'
+    implementation 'nl.dionsegijn:konfetti:1.3.2'
     // Anko Layouts
     implementation 'org.jetbrains.anko:anko-sdk25:0.10.1'
     // sdk15, sdk19, sdk21, sdk23 are also available
@@ -169,12 +169,12 @@ dependencies {
     dependencies {
         implementation fileTree(include: ['*.jar'], dir: 'libs')
         implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-        implementation 'androidx.appcompat:appcompat:1.0.0'
-        implementation 'com.google.android.material:material:1.0.0'
-        implementation 'androidx.recyclerview:recyclerview:1.0.0'
-        implementation 'androidx.multidex:multidex:2.0.0'
-        implementation 'androidx.exifinterface:exifinterface:1.0.0'
-        testImplementation 'junit:junit:4.12'
+        implementation 'androidx.appcompat:appcompat:1.3.1'
+        implementation 'com.google.android.material:material:1.4.0'
+        implementation 'androidx.recyclerview:recyclerview:1.2.1'
+        implementation 'androidx.multidex:multidex:2.0.1'
+        implementation 'androidx.exifinterface:exifinterface:1.3.3'
+        testImplementation 'junit:junit:4.13.2'
         // SU library
         implementation 'com.jaredrummler:android-shell:1.0.0'
         // Xposed
@@ -186,31 +186,31 @@ dependencies {
         implementation 'com.wang.avi:library:2.1.3'
         implementation 'com.isseiaoki:simplecropview:1.1.4'
         implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.27'
-        implementation 'com.github.bumptech.glide:glide:4.9.0'
-        annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+        implementation 'com.github.bumptech.glide:glide:4.12.0'
+        annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
         implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.2.0'
         implementation 'com.fujiyuu75:sequent:0.2.1'
         // View Injection
-        implementation 'com.jakewharton:butterknife:10.2.1'
-        annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+        implementation 'com.jakewharton:butterknife:10.2.3'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
         // File Management
-        implementation 'com.nononsenseapps:filepicker:4.1.0'
+        implementation 'com.nononsenseapps:filepicker:4.2.1'
         //RXJava
-        implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
-        implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
+        implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+        implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
         // APK Update Checker
         implementation 'com.github.javiersantos:AppUpdater:2.6.3'
         // ### Googles own API's ### \\
         // Network Request
-        implementation 'com.android.volley:volley:1.1.0'
+        implementation 'com.android.volley:volley:1.2.1'
         // JSON Parsing
-        implementation 'com.google.code.gson:gson:2.8.5'
+        implementation 'com.google.code.gson:gson:2.8.9'
         // Guava
         api 'com.google.guava:guava:27.1-android'
         //Tutorial lib for overview
         implementation 'com.github.faruktoptas:FancyShowCaseView:1.0.0'
         //Confetti lib because this is important andre dammit
-        implementation 'nl.dionsegijn:konfetti:1.0.2'
+        implementation 'nl.dionsegijn:konfetti:1.3.2'
         // Anko Layouts
         implementation 'org.jetbrains.anko:anko-sdk25:0.10.1'
         // sdk15, sdk19, sdk21, sdk23 are also available
